@@ -39,6 +39,9 @@ public class Calculator {
         int input;
         do {
             System.out.println("Enter a number (1-10):");
+            if(input>10) {
+                throw new InputMismatchException("Invalid input");
+            }else
             while (!scanner.hasNext()) {
                 System.out.println("Invalid input");
                 scanner.next();
