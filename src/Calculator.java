@@ -29,8 +29,7 @@ public class Calculator {
                 System.out.println(a + "/" + b +"*" + c +"="+ result);
                 break;
             default:
-                System.out.println("Invalid operator");
-                break;
+                throw new InputMismatchException("Invalid operator");
 
         }
 
