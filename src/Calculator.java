@@ -36,7 +36,7 @@ public class Calculator {
 
     }
     private static int getValidInput(Scanner scanner){
-        int input;
+        int input=0;
         do {
             System.out.println("Enter a number (1-10):");
             if(input>10) {
